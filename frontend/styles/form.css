@@ -1,0 +1,62 @@
+body{
+    background-image: url("img3.jpg") ;
+    background-repeat: no-repeat;
+ 
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+ 
+   padding: 20px;
+ }
+ 
+
+ 
+   ul {
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
+     overflow: hidden;
+   }
+   
+   li {
+     float: right;
+     font-size: 30px; 
+     font-family: 'Lacquer', cursive;
+   }
+   
+   li a {
+     display: block;
+     color: aliceblue;
+     text-align: center;
+     padding: 14px 16px;
+     text-decoration: none;
+   }
+   .rounded
+   {
+    background: rgba(249, 236, 228, 0.1);
+	-webkit-backdrop-filter: blur(10px);
+	backdrop-filter: blur(10px);
+    font-size: 30px;
+    margin:20px;
+    width:30%;
+    color: black;
+   }
+   .submit:hover
+   {
+        cursor: pointer;
+   }
+   .formip
+   {
+    
+    text-align: center;
+    background: rgba(249, 236, 228, 0.1);
+	-webkit-backdrop-filter: blur(10px);
+	backdrop-filter: blur(10px);
+    width:75%;
+    margin-left:10%;
+    margin-right: 10%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding:30px;
+   }

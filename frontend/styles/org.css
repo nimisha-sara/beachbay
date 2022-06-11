@@ -1,0 +1,97 @@
+body{
+    background-image: url("img3.jpg") ;
+    background-repeat: no-repeat;
+ 
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+ 
+   padding: 20px;
+ }
+ 
+ i:hover {
+     cursor: pointer;
+    
+   }
+ 
+   ul {
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
+     overflow: hidden;
+   }
+   
+   li {
+     float: right;
+     font-size: 30px; 
+     font-family: 'Lacquer', cursive;
+   }
+   
+   li a {
+     display: block;
+     color: aliceblue;
+     text-align: center;
+     padding: 14px 16px;
+     text-decoration: none;
+   }
+   
+   .abt
+   {
+     background: rgba(249, 236, 228, 0.1);
+     -webkit-backdrop-filter: blur(10px);
+     backdrop-filter: blur(10px);
+     border-radius: 50px;
+     line-height: 1.5;
+     font-size: 20px;
+     margin:20px;
+   }
+   .batch
+   {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display:grid;
+    grid-template-columns: auto auto auto;
+   }
+   .event
+  {
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin:10px;
+    background: rgba(249, 236, 228, 0.1);
+   -webkit-backdrop-filter: blur(10px);
+   backdrop-filter: blur(10px);
+    line-height: 1.5;
+   border-radius: 50px;
+  }
+  .reg
+  {
+    background-color: antiquewhite;
+    border:none;
+    border-radius:0px 0px 50px 50px;
+    height:50px;
+    width:100%;
+    font-size: 30px;
+  }
+.reg:hover{
+    cursor: pointer;
+}
+.event{
+    font-size: 20px;
+}
+.contact
+{
+    color:white;
+    font-size: 20px;
+    text-align: center;
+    background: rgba(249, 236, 228, 0.1);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    line-height: 1.5;
+   border-radius: 50px;
+   margin-left:15%;
+   margin-right: 15%;
+   padding:20px;
+}

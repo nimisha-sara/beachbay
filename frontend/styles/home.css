@@ -1,0 +1,68 @@
+body{
+   background-image: url("img1.jpg") ;
+   background-repeat: no-repeat;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  padding: 20px;
+}
+
+i:hover {
+    cursor: pointer;
+   
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  li {
+    float: right;
+    font-size: 30px; 
+    font-family: 'Lacquer', cursive;
+  }
+  
+  li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+
+
+
+  .input-group
+  {
+    margin: 0;
+  position: absolute;
+  top: 50%;
+ left:50%;
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+
+
+    
+  }
+
+  .form-control
+  {
+    height: 50px; width:300px; font-size: 30px; padding:10px; border:none;
+    
+    background: rgba(255, 255, 255, .7);
+	-webkit-backdrop-filter: blur(10px);
+	backdrop-filter: blur(10px);
+  }
+
+  .rounded
+  {
+   padding: 10px;
+    border-radius: 50px;
+  }
