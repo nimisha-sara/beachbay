@@ -8,4 +8,21 @@ travelling. It includes information about upcoming beach sport activities in som
 ## Screenshots of UI 
 
 
+Landing page
+
+![](images/Landingpage.png)
+
+
+Home page
+
+![](images/Beachpage.png)
+
+ModalBox
+
+![](images/modal.png)
+
+Activities page
+
+![](images/Activities.png)
+
 
