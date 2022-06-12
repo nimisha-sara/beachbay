@@ -88,8 +88,6 @@ def add():
 
     beaches_df = pd.read_csv('data/beaches.csv')
     sports_df = pd.read_csv('data/sports.csv')
-    
-    print(sport_name, "\n==================\n")
     desc = sport_desc((sport_name))
 
     data = sports_df[(sports_df.sport_name==sport_name)&(sports_df.beach_name==beach_name)]
