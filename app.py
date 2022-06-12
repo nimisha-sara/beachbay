@@ -46,5 +46,33 @@ def sport():
     return render_template('sport.html', data=[sport, desc, beach_id, data, beach])
 
 
+@app.route("/add" , methods=['GET', 'POST'])
+def add():
+    sports_df = pd.read_csv('data/sports.csv')
+
+    name = request.form.get('beach').split('in')
+    beach_name = name[1]
+    sport_name = name[0]
+    organizer_name = request.form.get('name')
+    time = request.form.get('time')
+    email = request.form.get('email')
+    mobile = request.form.get('mobile')
+    cost = request.form.get('cost')
+
+    data = {
+        "sport_name": sport_name,
+        "beach_name": beach_name,
+        "organizer_name": organizer_name,
+        "phone": mobile,
+        "email": email,
+        "timings": time,
+        "cost": cost,
+        "user_name": "Anonymous"
+    }
+
+    sports_df.append(data, ignore_index=True)
+    del sports_df['id']
+    sports_df.to_csv('data\sports.csv')
+
 if __name__=="__main__":
     app.run(debug=True)
