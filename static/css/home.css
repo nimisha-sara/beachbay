@@ -51,7 +51,7 @@ li a {
   padding: 10px;
   border: none;
 
-  background: background: rgba(253, 253, 253, 0.9);
+  background: background: rgba(253, 253, 253, 0.5);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
 }
