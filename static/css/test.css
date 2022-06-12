@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Luxurious+Roman&display=swap');
+* {
+    box-sizing: border-box;
+  }
+
+body {
+  background-color: aliceblue;
+  font-family: 'Cardo', serif;
+  margin-top: 0;
+
+}
+
+/* -----------Page Header------------- */
+
+.header{
+  width: 100%;
+  text-align: center;
+  padding: 4%;
+  background: url(https://images.pexels.com/photos/931018/pexels-photo-931018.jpeg);
+  color: rgb(255, 255, 255);
+  margin-bottom: 10px;
+}
+
+.header h2{
+  font-size: 45px;
+}
+
+.beach-text{
+  color: #015352;
+}
+
+.beach-text h2{
+  font-size: 5em;
+}
+
+.beach-text span{
+  font-weight: 700;
+}
+
+
+/* ---------------Card Layout--------------- */
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 400px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.701);
+  padding: 16px;
+  text-align: center;
+  background-color: #353535af;
+}
+
+/* --------------CARD HOVER & BUTTON----------- */
+
+.button button{
+  font-size: small;
+  padding:2px 20px;
+  color: #189AA7;
+  border: whitesmoke;
+  background-color: rgb(252, 252, 252);
+}
+
+.button button:hover{
+  border: black;
+  color: whitesmoke;
+  background-color: #189AA7;
+}
