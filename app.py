@@ -2,6 +2,7 @@ from flask import Flask, render_template, request, redirect
 import pandas as pd
 
 app = Flask(__name__)
+# app.config["TEMPLATES_AUTO_RELOAD"] = True
 
 @app.route("/")
 def main():
@@ -26,7 +27,9 @@ def beach_choice():
 
 @app.route("/sport" , methods=['GET', 'POST'])
 def sport():
-    beach = request.form.get('beach')
+    beaches_df = pd.read_csv('data/beaches.csv')
+    sports_df = pd.read_csv('data/sports.csv')
+    beach = beaches_df['name'][int(request.form.get('beach'))]
     sport = request.form.get('sport')
     if sport == "Snorkelling":
         desc = "Snorkeling is swimming along the surface of the water and enjoying the underwater world equipped with a mask (or googles), a snorkel (a shaped breathing tube), and usually swim fins (or flippers). The mask allows having a clear vision underwater, the snorkel to breathe with the face submerged by water, and the swim fins to move with less effort and more control. \nSnorkeling does not require any special training, major expenses, or strong physical effort. It allows us to see the beauty of the underwater world, and like any water-based exercise, also provides amazing health benefits. If you like taking pictures, snorkeling is also an amazing opportunity to take epic underwater shots or marine life. For that, all you’ll need is a waterproof camera."
@@ -36,8 +39,11 @@ def sport():
         desc = "Parasailing is a sport where one person or multiple people are towed through the air behind a vehicle while attached to a device similar to a parachute, which catches the wind like a kite and lifts the participants into the air. Most parasailing occurs over water, with a large speedboat providing propulsion, but cars and trucks can also be used to parasail over land. The trailers are attached to the parasail via a harness, and the parasail, in turn, is connected to the anchor vehicle by a tow rope. Traditionally, parasailing involves either one or two parasailing, but there can also be accommodated on certain occasions."
     elif sport == "Jet Skiing":
         desc = "Many of us likely had an introduction to the thrills of jet skiing whilst on holiday, but it’s not just the beaches of the Caribbean or some other exotic location that are the places to go. Jet skiing is a high speed water sport that is great for developing your balance and coordination skills as well as your leg muscles. There are many great locations where you can get a great introduction to jet skiing. Of all the water sports, jet skiing is probably the easiest to pick up. It’s also probably the fastest, and it’s the adrenaline attached to that speed that attracts thousands of people to the sport. \nEven if you have jet skied before, it’s worth doing it to ensure you have the skills to ride safely. But it’s not just for safety reasons; more and more launch sites are now demanding you have the certificate before allowing you to gain access to the water."
-    print(sport, beach)
-    return render_template('sport.html', data=[sport, desc])
+
+    data = sports_df[(sports_df.sport_name==sport)&(sports_df.beach_name==beach)]
+    beach_id = list(data['id'])
+    print(len(beach_id), "\n==================\n")
+    return render_template('sport.html', data=[sport, desc, beach_id, data, beach])
 
 
 if __name__=="__main__":
