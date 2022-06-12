@@ -41,13 +41,8 @@ ul {
 }
 
 .abt {
-  background: rgba(249, 236, 228, 0.1);
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
-  border-radius: 50px;
+
   text-align: center;
-  margin: 5%;
-  padding: 20px;
   line-height: 1.5;
 }
 
@@ -70,4 +65,9 @@ ul {
 
 .header h2 {
   font-size: 45px;
+}
+
+.card-title
+{
+background-color:black;
 }
