@@ -13,7 +13,7 @@
 
 
     <ul >
-        <li style="float: left; color:white; font-size:40px;"><a href="home.html">BeachBaY</a></li>
+        <li style="float: left; color:white; font-size:40px;"><a href="{{ url_for( 'main' ) }}">BeachBaY</a></li>
     </ul>
       
 
@@ -38,7 +38,7 @@
   font-family: 'Lacquer', cursive;">ABOUT BEACHBAY</p>
 <p style="font-size:20px;">llorem ipsum</p>
 
-<i class="fa fa-github" style="font-size:30px;"><a href="https://github.com/nimisha-sara/beachbay"></a></i>
+<i class="fa fa-github" style="font-size:30px;"><a href="{{ url_for('link_redirect', url='https://github.com/nimisha-sara/beachbay') }}></a></i>
 
     </div>
 </body>
