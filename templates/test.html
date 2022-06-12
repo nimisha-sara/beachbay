@@ -45,20 +45,20 @@
             <div class="modal-dialog">
             
             <!-- Modal content-->
-            <div class="modal-content">
+            <div class="modal-content"style="background-color:rgba(255, 255, 255, 1);border: 5px solid rgba(1, 83, 82, 1);">
                 <div class="modal-header">
                 <h4 class="modal-title">Add Details</h4>
                 </div>
-                <div class="modal-body">
+                <div class="modal-body" style="text-align:center;" >
                 <form action="{{ url_for( 'sport' ) }}" method="post">
                     <input type="text" value="" name="beach" id="beach-id" hidden><br>
-                    <select name="sport" id="">
+                    <select name="sport" id="" style="margin:10px; font-size:20px;border-radius:10px;color:rgba(1, 83, 82, 1);border: 3px solid rgba(1, 83, 82, 1);">
                         <option value="Scuba Diving">Scuba Diving</option>
                         <option value="Snorkelling">Snorkelling</option>
                         <option value="Jet Skiing">Jet Skiing</option>
                         <option value="Parasailing">Parasailing</option>
                     </select><br>
-                    <input type="submit" value="SELECT">
+                    <input type="submit" value="SELECT" style="margin:10px; font-size:20px;border-radius:10px;color:rgba(1, 83, 82, 1); border: 3px solid rgba(1, 83, 82, 1);">
                 </form>
                 </div>
             </div>
