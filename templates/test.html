@@ -37,36 +37,6 @@
                     </div>
                 </div>
             </div>
-
-            <!-- Modal -->
-            <div class="modal fade" id="myModal" class="mcont" role="dialog">
-                <div class="modal-dialog" >
-                
-                <!-- Modal content-->
-                <div class="modal-content" style=" background-color:rgb(252, 245, 229);border:5px solid rgba(1, 83, 82, 1);
-   height: 300px;   padding:20px;">
-                    <div class="modal-header">
-                        <h4 class="modal-title" style="text-align:centre; color: rgba(1, 83, 82, 1);">Choose Sport!</h4>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-
-                    </div>
-                    <div class="modal-body" style="text-align:center;">
-                    <form action="{{ url_for( 'sport' ) }}" method="post">
-                        <input type="text" value="{{ data[1]['name'][i] }}" name="beach" readonly style="border-radius:10px; font-size:20px;background-color:rgb(252, 245, 229);border:2px solid rgba(1, 83, 82, 1);" ><br>
-                        <select name="sport" id="" style="margin:20px;border-radius:10px; font-size:20px;background-color:rgb(252, 245, 229);border:2px solid rgba(1, 83, 82, 1);">
-                            <option value="Scuba Diving">Scuba Diving</option>
-                            <option value="Snorkelling">Snorkelling</option>
-                            <option value="Jet Skiing">Jet Skiing</option>
-                            <option value="Parasailing">Parasailing</option>
-                        </select><br>
-                        <input type="submit" value="SELECT"  class="sub" style="border-radius:10px; border:2px solid rgba(1, 83, 82, 1);font-size:20px;background-color:rgb(252, 245, 229);">
-                    </form>
-                    </div>
-                </div>
-                
-                </div>
-            </div>
-
             {% set beachs = data[1]['name'][i] %}
         </div>
         
