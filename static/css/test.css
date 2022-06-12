@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Luxurious+Roman&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Luxurious+Roman&display=swap');
 * {
     box-sizing: border-box;
   }
@@ -7,7 +8,6 @@ body {
   background-color: aliceblue;
   font-family: 'Cardo', serif;
   margin-top: 0;
-
 }
 
 /* -----------Page Header------------- */
@@ -16,9 +16,15 @@ body {
   width: 100%;
   text-align: center;
   padding: 4%;
-  background: url(https://images.pexels.com/photos/931018/pexels-photo-931018.jpeg);
+  background: url(https://thumbs.dreamstime.com/b/beach-sea-18378306.jpg);
   color: rgb(255, 255, 255);
   margin-bottom: 10px;
+
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .header h2{
@@ -34,7 +40,8 @@ body {
 }
 
 .beach-text span{
-  font-weight: 700;
+  font-weight: 900;
+  font-family: 'Playfair Display', serif;
 }
 
 

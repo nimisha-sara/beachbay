@@ -1,81 +1,73 @@
-body{
-    background-image: url("scuba.jpg") ;
-    background-repeat: no-repeat;
- 
-   background-attachment: fixed;
-   background-position: center;
-   background-repeat: no-repeat;
-   background-size: cover;
- 
-   padding: 20px;
-   color: black;
- }
+@import url("https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Luxurious+Roman&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Luxurious+Roman&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("scuba.jpg");
+  background-repeat: no-repeat;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  color: black;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
 
 
- ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-  }
-  
-  li {
-    float: right;
-    font-size: 30px; 
-    font-family: 'Lacquer', cursive;
-  }
-  
-  li a {
-    display: block;
-    color: rgb(0, 0, 0);
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  .actv
-  {
-    display:grid;
-    grid-template-columns: auto auto auto;
-  }
-  .org-card
-  {
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin:10px;
-    background: rgba(249, 236, 228, 0.1);
-   -webkit-backdrop-filter: blur(10px);
-   backdrop-filter: blur(10px);
-    line-height: 1.5;
-   border-radius: 50px;
-  }
+.title {
+  text-align: center;
+  margin: 20px;
+  color: black;
+  font-size: 40px;
+  background: rgba(249, 236, 228, 0.2);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  margin-left: 40%;
+  margin-right: 40%;
+  border-radius: 50px;
+  padding: 20px;
+}
 
-  .org-card:hover{
-    cursor: pointer;
-    background: rgba(249, 236, 228, 0.3);
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
-  }
-  .title
-  {
-    text-align: center; margin:20px; color: black; font-size: 40px;
-    background: rgba(249, 236, 228, 0.2);
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
-    margin-left: 40%;
-    margin-right: 40%;
-    border-radius: 50px;
-    padding: 20px;
-  }
+.abt {
+  background: rgba(249, 236, 228, 0.1);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border-radius: 50px;
+  text-align: center;
+  margin: 5%;
+  padding: 20px;
+  line-height: 1.5;
+}
 
-  .abt
-  {
-    background: rgba(249, 236, 228, 0.1);
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
-    border-radius: 50px;
-    text-align: center;
-    margin: 5%;
-    padding: 20px;
-    line-height: 1.5;
-  }
+/* header */
+
+.header {
+  width: 100%;
+  text-align: center;
+  padding: 4%;
+  background: url(https://thumbs.dreamstime.com/b/beach-sea-18378306.jpg);
+  color: rgb(255, 255, 255);
+  margin-bottom: 10px;
+
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header h2 {
+  font-size: 45px;
+}
